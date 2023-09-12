@@ -4,6 +4,7 @@ metadata:
   name: example-app-service-monitor
   labels:
     serviceMonitorSelector: prometheus
+    monitoring: prometheus
 #  namespace: example-app
     team: frontend
 spec:
