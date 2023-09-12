@@ -15,5 +15,5 @@ kubectl apply -f application.yaml
 ## diagram
 https://stackoverflow.com/questions/52991038/how-to-create-a-servicemonitor-for-prometheus-operator
 
-![diagram](https://i.stack.imgur.com/OCaB6.png)
+![prometheus-operator](https://github.com/ma-sharifi/prometheus-k8s-spring/assets/8404721/eab637e2-1e57-4bb8-a230-f9196df29916)
 
