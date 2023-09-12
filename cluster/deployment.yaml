@@ -1,0 +1,24 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: example-app-deployment
+spec:
+  selector:
+    matchLabels:
+      app: example-app
+  revisionHistoryLimit: 1  #field in a Deployment to specify how many old ReplicaSets for this Deployment you want to retain. The rest will be garbage-collected in the background. By default, it is 10.
+  template:
+    metadata:
+      labels:
+        app: example-app
+    spec:
+      containers:
+        - name: example-app
+          image: picher/prometheus-k8s-spring:latest
+          ports:
+            - containerPort: 8080
+          resources:
+            requests:
+              cpu: 500m
+            limits:
+              cpu: 900m
