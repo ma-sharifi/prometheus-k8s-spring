@@ -3,7 +3,7 @@ kind: ServiceMonitor
 metadata:
   name: example-app-service-monitor
   labels:
-#    serviceMonitorSelector: example-app
+    serviceMonitorSelector: prometheus
 #  namespace: example-app
     team: frontend
 spec:
