@@ -5,8 +5,12 @@ metadata:
   labels:
     team: frontend
 spec:
+  endpoints:
+    - interval: 30s
+      targetPort: 8080
+      path: /actuator/prometheus
   selector:
     matchLabels:
       app: example-app
-  endpoints:
-    - port: web
+#  endpoints:
+#    - port: web

@@ -3,6 +3,7 @@ kind: Deployment
 metadata:
   name: example-app-deployment
 spec:
+  replicas: 1
   selector:
     matchLabels:
       app: example-app
@@ -16,7 +17,8 @@ spec:
         - name: example-app
           image: picher/prometheus-k8s-spring:latest
           ports:
-            - containerPort: 8080
+          - name: web
+            containerPort: 8080
           resources:
             requests:
               cpu: 500m
