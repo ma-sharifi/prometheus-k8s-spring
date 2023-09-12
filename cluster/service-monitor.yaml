@@ -11,7 +11,7 @@ spec:
       path: /actuator/prometheus
   selector:
     matchLabels:
-      app: example-app
+      app: "example-app"
   namespaceSelector:
     matchNames:
       - monitoring
