@@ -1,0 +1,20 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application #https://www.youtube.com/watch?v=MeU5_k9ssrs
+metadata:
+  name: myapp-application
+  namespace: myapp
+spec:
+  project: default #https://argo-cd.readthedocs.io/en/stable/operator-manual/declarative-setup/
+  source:
+    repoURL: https://github.com/ma-sharifi/prometheus-k8s-spring.git
+    targetRevision: HEAD
+    path: cluster1
+  destination:
+    server: https://kubernetes.default.svc
+    namespace: myapp
+  syncPolicy:
+    syncOptions:
+      - CreateNamespace=true
+    automated:
+      selfHeal: true #undo any manual change in cluster
+      prune: true
