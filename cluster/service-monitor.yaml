@@ -3,7 +3,9 @@ kind: ServiceMonitor
 metadata:
   name: example-app-service-monitor
   labels:
-    team: example-app
+    serviceMonitorSelector: example-app
+  namespace: example-app
+
 spec:
   endpoints:
     - interval: 30s
