@@ -12,5 +12,8 @@ spec:
   selector:
     matchLabels:
       app: example-app
+  namespaceSelector:
+    matchNames:
+      - monitoring
 #  endpoints:
 #    - port: web
