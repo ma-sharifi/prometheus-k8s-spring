@@ -12,5 +12,9 @@ http://localhost:8080/actuator/prometheus
 kubectl apply -f application.yaml
 ```
 
+## diagram
+https://stackoverflow.com/questions/52991038/how-to-create-a-servicemonitor-for-prometheus-operator
+
+[diagram](https://i.stack.imgur.com/OCaB6.png)
 
 
