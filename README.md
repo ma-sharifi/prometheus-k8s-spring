@@ -12,6 +12,11 @@ kubectl apply -f application2.yaml
 It will install CRD in kubernetes
 Then go to your ArgoCD UI to see the result of your deployent.
 
+* Metrics will be persis into Prometheus you just deployed with Manifwst apiVersion: monitoring.coreos.com/v1 kind: Prometheus.
+
+* There is no need to install Prometheus Operator separately.
+* Follow the the pictures in /documents folder. 
+
 ## Prometheus
 https://prometheus-operator.dev/docs/prologue/quick-start/
 
