@@ -12,4 +12,6 @@ spec:
       app.kubernetes.io/name: "argocd-server-metrics" # <- app.kubernetes.io/name=argocd-server-metrics
   endpoints:
   - interval: 30s
-  - port: metrics    # <-  Port:metrics  8083/TCP
+    targetPort: 8083
+    path: /metrics
+#  - port: metrics    # <-  Port:metrics  8083/TCP
