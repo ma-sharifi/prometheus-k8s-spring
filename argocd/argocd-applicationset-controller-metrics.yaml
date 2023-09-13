@@ -11,7 +11,7 @@ spec:
     matchLabels:
       app.kubernetes.io/name: argocd-applicationset-controller
   endpoints:
-    - port: metrics
-  namespaceSelector:
+    - port: metrics # Ports in Kuber is: webhook:7000►0 metrics:8080►0
+  namespaceSelector: #It uses the namespaceSelector to specify the Kubernetes Namespace in which we wish to locate the Service
     matchNames:
-      - argocd # VWERI IMPORTANT
+      - argocd # VERY IMPORTANT

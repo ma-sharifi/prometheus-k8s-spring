@@ -15,6 +15,6 @@ spec:
     targetPort: 8083
     path: /metrics
 #  - port: metrics    # <-  Port:metrics  8083/TCP
-  namespaceSelector:
+  namespaceSelector:  #It uses the namespaceSelector to specify the Kubernetes Namespace in which we wish to locate the Service
     matchNames:
-      - argocd # VWERI IMPORTANT
+      - argocd # VERY IMPORTANT

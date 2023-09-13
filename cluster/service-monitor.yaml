@@ -5,7 +5,6 @@ metadata:
   labels:
     serviceMonitorSelector: prometheus
     monitoring: prometheus
-#  namespace: example-app
     team: frontend
 spec:
   endpoints:
@@ -16,6 +15,6 @@ spec:
   selector:
     matchLabels:
       app: "example-app"
-  namespaceSelector:
+  namespaceSelector:  #It uses the namespaceSelector to specify the Kubernetes Namespace in which we wish to locate the Service
     matchNames:
       - example-app

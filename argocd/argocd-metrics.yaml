@@ -9,12 +9,12 @@ metadata:
 spec:
   selector:
     matchLabels:
-      app.kubernetes.io/name: "argocd-metrics" # <- app.kubernetes.io/name=argocd-metrics
+      app.kubernetes.io/name: argocd-metrics # <- app.kubernetes.io/name=argocd-metrics
   endpoints:
     - interval: 30s
       targetPort: 8082
       path: /metrics
-#    - port: metrics  # <-Port:metrics  8082/TCP
-  namespaceSelector:
+#    - port: metrics  # <-Port:metrics  8082/TCP  THE SAME AS port: metrics
+  namespaceSelector:  #It uses the namespaceSelector to specify the Kubernetes Namespace in which we wish to locate the Service
     matchNames:
-      - argocd
+      - argocd # VERY IMPORTANT
