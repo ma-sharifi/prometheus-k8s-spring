@@ -12,7 +12,10 @@ spec:
       - staging
   selector:
     matchLabels:
-      app: myapp-monitoring
+      app: myapp
   endpoints:
-    - port: http-metrics
-      path: /actuator/prometheus
+    - port: web
+#  endpoints:
+#    - port: http-metrics
+#      path: /actuator/prometheus
+

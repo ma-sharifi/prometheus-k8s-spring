@@ -5,12 +5,15 @@ metadata:
   name: myapp-prom-service
   namespace: staging
   labels:
-    app: myapp-monitoring
+    app: myapp
 spec:
-  type: ClusterIP
-  ports:
-    - name: http-metrics
-      port: 8080
-      targetPort: http-metrics
+#  type: ClusterIP
   selector:
     app: myapp
+  ports:
+    - name: web
+      port: 8080
+#    - name: http-metrics
+#      port: 8080
+#      targetPort: http-metrics
+
