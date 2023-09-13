@@ -2,7 +2,10 @@
 This is an example of how to scrape metrics for a Spring boot application by Prometheus
 
 ## How to work
-1- run the following command
+By default, Prometheus will only pick up ServiceMonitors from the current namespace.
+To select ServiceMonitors from other namespaces, you can update the spec.serviceMonitor.NamespaceSelector field of the Prometheus resource. https://prometheus-operator.dev/docs/user-guides/getting-started/
+
+### run the following command
 ```shell
 kubectl apply -f application2.yaml
 ```
