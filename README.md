@@ -9,7 +9,7 @@ http://localhost:8080/actuator/prometheus
 ## How to work
 1- run the following command 
 ```shell
-kubectl apply -f application.yaml
+kubectl apply -f application2.yaml
 ```
 
 ## diagram
