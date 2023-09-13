@@ -8,10 +8,10 @@ spec:
   source:
     repoURL: https://github.com/ma-sharifi/prometheus-k8s-spring.git
     targetRevision: HEAD
-    path: prome2
+    path: prome2 # whcih folder looks for manifests
   destination:
     server: https://kubernetes.default.svc
-    namespace: prome2
+    namespace: prome3
   syncPolicy:
 #    syncOptions:
 #      - CreateNamespace=true # create namespace automatically

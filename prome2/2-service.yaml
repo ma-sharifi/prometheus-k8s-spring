@@ -1,8 +1,7 @@
-kind: Service
 apiVersion: v1
+kind: Service
 metadata:
   name: example-app
-  namespace: prom2
   labels:
     app: example-app
 spec:
