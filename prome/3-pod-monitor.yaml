@@ -1,6 +1,6 @@
 ---
 apiVersion: monitoring.coreos.com/v1
-kind: PodMonitor
+kind: PodMonitor #PodMonitor resources describe the targets to be monitored by Prometheus.
 metadata:
   name: myapp-pod-monitor
   namespace: staging

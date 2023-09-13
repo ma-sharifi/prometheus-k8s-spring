@@ -5,8 +5,8 @@ metadata:
   labels:
     app: example-app
 spec:
-  selector:
+  selector: # selects all the Pods with the app label having the example-app value.
     app: example-app
   ports:
     - name: web
-      port: 8080
+      port: 8080 # specifies the port on which the metrics are exposed.

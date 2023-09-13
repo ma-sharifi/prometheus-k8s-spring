@@ -1,5 +1,5 @@
 apiVersion: monitoring.coreos.com/v1
-kind: Prometheus
+kind: Prometheus #describes the desired state of a Prometheus deployment
 metadata:
   name: prometheus
 spec:
