@@ -11,7 +11,7 @@ spec:
     path: prome2
   destination:
     server: https://kubernetes.default.svc
-    namespace: sm
+    namespace: prome2
   syncPolicy:
 #    syncOptions:
 #      - CreateNamespace=true # create namespace automatically
