@@ -15,3 +15,6 @@ spec:
     targetPort: 8083
     path: /metrics
 #  - port: metrics    # <-  Port:metrics  8083/TCP
+  namespaceSelector:
+    matchNames:
+      - argocd
