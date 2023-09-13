@@ -2,7 +2,7 @@ apiVersion: argoproj.io/v1alpha1
 kind: Application #https://www.youtube.com/watch?v=MeU5_k9ssrs
 metadata:
   name: myapp-application
-  namespace: myapp
+  namespace: argocd # IMPORTANT: the same name of argo CD namespace. Don't change it
 spec:
   project: default #https://argo-cd.readthedocs.io/en/stable/operator-manual/declarative-setup/
   source:
@@ -14,7 +14,7 @@ spec:
     namespace: myapp
   syncPolicy:
 #    syncOptions:
-#      - CreateNamespace=true
+#      - CreateNamespace=true # create namespace automatically
     automated:
       selfHeal: true #undo any manual change in cluster
       prune: true

@@ -2,7 +2,7 @@
 apiVersion: monitoring.coreos.com/v1
 kind: ServiceMonitor
 metadata:
-  name: myapp
+  name: myapp-service-monitor
   namespace: staging
   labels:
     prometheus: main

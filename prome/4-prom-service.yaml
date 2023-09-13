@@ -2,8 +2,8 @@
 apiVersion: v1
 kind: Service
 metadata:
+  name: myapp-prom-service
   namespace: staging
-  name: myapp-prom
   labels:
     app: myapp-monitoring
 spec:
