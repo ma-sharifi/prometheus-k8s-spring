@@ -10,7 +10,7 @@ metadata:
 spec:
   endpoints:
     - interval: 30s
-    - port: metrics    # <-  argetPort: 8080    path: /actuator/prometheus
+    - port: metrics    # <-  argetPort: 8080
 #      targetPort: 8080
       path: /actuator/prometheus
   selector:
