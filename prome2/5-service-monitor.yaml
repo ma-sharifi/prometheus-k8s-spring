@@ -5,7 +5,7 @@ metadata:
   labels:
     team: frontend # to identify, which team is responsible for monitoring the application/service.
 spec:
-  namespaceSelector: prome3 #By default, Prometheus will only pick up ServiceMonitors from the current namespace. To select ServiceMonitors from other namespaces, you can update the spec.serviceMonitor.NamespaceSelector field of the Prometheus resource. https://prometheus-operator.dev/docs/user-guides/getting-started/
+#  namespaceSelector: prome3 #By default, Prometheus will only pick up ServiceMonitors from the current namespace. To select ServiceMonitors from other namespaces, you can update the spec.serviceMonitor.NamespaceSelector field of the Prometheus resource. https://prometheus-operator.dev/docs/user-guides/getting-started/
   selector: # selects all Service objects with the app: example-app label.
     matchLabels:
       app: example-app
