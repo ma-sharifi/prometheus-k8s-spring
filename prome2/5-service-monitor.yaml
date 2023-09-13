@@ -5,6 +5,7 @@ metadata:
   labels:
     team: frontend
 spec:
+  namespaceSelector: prome3
   selector:
     matchLabels:
       app: example-app
