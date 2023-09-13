@@ -10,7 +10,7 @@ metadata:
 spec:
   endpoints:
     - interval: 30s
-    - port: metrics    # <-  argetPort: 8080
+    - port: web    # is the same as  targetPort: 8080, cause you can see in kbernetes the post is:  web:8080►0
 #      targetPort: 8080
       path: /actuator/prometheus
   selector:
