@@ -1,16 +1,21 @@
 # Metric with Prometheus
 This is an example of how to scrape metrics for a Spring boot application by Prometheus
+
+## How to work
+1- run the following command
+```shell
+kubectl apply -f application2.yaml
+```
+It will install CRD in kubernetes
+Then go to your ArgoCD UI to see the result of your deployent.
+
 ## Prometheus
 https://prometheus-operator.dev/docs/prologue/quick-start/
 
 ## Link
 http://localhost:8080/actuator/prometheus
 
-## How to work
-1- run the following command 
-```shell
-kubectl apply -f application2.yaml
-```
+
 
 ## diagram
 https://stackoverflow.com/questions/52991038/how-to-create-a-servicemonitor-for-prometheus-operator

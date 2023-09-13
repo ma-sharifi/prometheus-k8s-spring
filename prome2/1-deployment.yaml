@@ -2,6 +2,7 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: example-app
+#  namespace: prome3-> It will read from application->spec.destination.namespace:
 spec:
   replicas: 1
   selector:
